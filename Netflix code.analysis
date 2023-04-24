@@ -1,0 +1,131 @@
+Codes
+CREATE TABLE Netflix (
+    show_id VARCHAR2(50),
+    type VARCHAR2(100),
+    title VARCHAR2(100),
+    date_added DATE,
+    release_year NUMBER,
+    rating VARCHAR2(50),
+    duration VARCHAR2(100),
+    listed_in VARCHAR2(500)
+);
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ALTER TABLE netflix MODIFY title VARCHAR2(200);
+---------------------------------------------------------------------------------------------------------------------------------------------------
+select*
+from netflix;
+---------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6319','TV Show','Bitten',to_date(' May 26, 2016', 'MONTH DD, YYYY'),2016,'TV-MA','3 Seasons','International TV Shows, TV Dramas, TV Horror');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6080','TV Show','Abnormal Summit',to_date(' August 4, 2017', 'MONTH DD, YYYY'),2017,'TV-PG','2 Seasons','International TV Shows, Korean TV Shows, Stand-Up Comedy & Talk Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6178','TV Show','å¿?è€…ãƒ?ãƒƒãƒˆãƒªã??ã‚“',to_date(' December 23, 2018', 'MONTH DD, YYYY'),2012,'TV-Y7','2 Seasons','Anime Series, Kids'' TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6214','TV Show','Bad Education',to_date(' December 15, 2018', 'MONTH DD, YYYY'),2014,'TV-MA','3 Seasons','British TV Shows, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6280','TV Show','Being Mary Jane: The Series',to_date(' July 1, 2017', 'MONTH DD, YYYY'),2016,'TV-14','4 Seasons','Romantic TV Shows, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6305','TV Show','Big Dreams, Small Spaces',to_date(' July 26, 2019', 'MONTH DD, YYYY'),2017,'TV-G','3 Seasons','British TV Shows, International TV Shows, Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6319','TV Show','Bitten',to_date(' May 26, 2016', 'MONTH DD, YYYY'),2016,'TV-MA','3 Seasons','International TV Shows, TV Dramas, TV Horror');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6358','TV Show','Bondi Rescue',to_date(' November 1, 2019', 'MONTH DD, YYYY'),2016,'TV-PG','1 Season','Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6362','TV Show','Borderline',to_date(' December 2, 2017', 'MONTH DD, YYYY'),2017,'TV-14','2 Seasons','British TV Shows, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6369','TV Show','Brain Games',to_date(' March 15, 2019', 'MONTH DD, YYYY'),2016,'TV-G','3 Seasons','Docuseries, Science & Nature TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6394','TV Show','Burnistoun',to_date(' October 1, 2019', 'MONTH DD, YYYY'),2012,'TV-MA','2 Seasons','British TV Shows, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6452','TV Show','Chasing Monsters',to_date(' December 15, 2017', 'MONTH DD, YYYY'),2016,'TV-PG','2 Seasons','Docuseries, Reality TV, Science & Nature TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6457','TV Show','Cheers',to_date(' July 1, 2017', 'MONTH DD, YYYY'),1992,'TV-PG','11 Seasons','Classic & Cult TV, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6458','TV Show','Chef & My Fridge',to_date(' August 4, 2017', 'MONTH DD, YYYY'),2017,'TV-PG','2 Seasons','International TV Shows, Korean TV Shows, Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6461','TV Show','Chewing Gum',to_date(' April 4, 2017', 'MONTH DD, YYYY'),2017,'TV-MA','2 Seasons','British TV Shows, International TV Shows, Romantic TV Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6520','TV Show','Comedy Bang! Bang!',to_date(' December 28, 2016', 'MONTH DD, YYYY'),2016,'TV-14','5 Seasons','Stand-Up Comedy & Talk Shows, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6550','TV Show','Dad''s Army',to_date(' March 31, 2018', 'MONTH DD, YYYY'),1977,'TV-PG','10 Seasons','British TV Shows, Classic & Cult TV, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6561','TV Show','Dangerous Roads',to_date(' February 1, 2019', 'MONTH DD, YYYY'),2012,'TV-MA','2 Seasons','British TV Shows, Docuseries');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6604','TV Show','Dexter',to_date(' January 1, 2018', 'MONTH DD, YYYY'),2013,'TV-MA','8 Seasons','Crime TV Shows, TV Dramas, TV Mysteries');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6672','TV Show','El Barco',to_date(' July 1, 2017', 'MONTH DD, YYYY'),2013,'NR','3 Seasons','International TV Shows, Romantic TV Shows, Spanish-Language TV Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6679','TV Show','El Vato',to_date(' February 24, 2018', 'MONTH DD, YYYY'),2017,'TV-MA','2 Seasons','International TV Shows, Spanish-Language TV Shows, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6743','TV Show','Father Brown',to_date(' March 31, 2018', 'MONTH DD, YYYY'),2017,'TV-14','6 Seasons','British TV Shows, Crime TV Shows, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6764','TV Show','Fit for Fashion',to_date(' December 14, 2018', 'MONTH DD, YYYY'),2015,'TV-14','2 Seasons','International TV Shows, Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6767','TV Show','Fix It and Finish It',to_date(' July 20, 2018', 'MONTH DD, YYYY'),2014,'TV-G','3 Seasons','Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6804','TV Show','Friday Night Tykes',to_date(' January 17, 2018', 'MONTH DD, YYYY'),2017,'TV-PG','4 Seasons','Docuseries, Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6823','TV Show','Galavant',to_date(' September 7, 2016', 'MONTH DD, YYYY'),2016,'TV-PG','2 Seasons','TV Action & Adventure, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6869','TV Show','Goldie & Bear',to_date(' October 31, 2018', 'MONTH DD, YYYY'),2017,'TV-Y','2 Seasons','Kids'' TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6872','TV Show','Gomorrah',to_date(' August 21, 2017', 'MONTH DD, YYYY'),2016,'TV-MA','2 Seasons','Crime TV Shows, International TV Shows, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6886','TV Show','Gossip Girl',to_date(' October 8, 2013', 'MONTH DD, YYYY'),2012,'TV-14','6 Seasons','TV Dramas, Teen TV Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6891','TV Show','Grand Hotel',to_date(' November 1, 2017', 'MONTH DD, YYYY'),2013,'TV-PG','3 Seasons','International TV Shows, Romantic TV Shows, Spanish-Language TV Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6895','TV Show','Great Interior Design Challenge',to_date(' December 1, 2018', 'MONTH DD, YYYY'),2016,'TV-PG','2 Seasons','British TV Shows, International TV Shows, Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6923','TV Show','Happy Valley',to_date(' March 16, 2016', 'MONTH DD, YYYY'),2016,'TV-MA','2 Seasons','British TV Shows, Crime TV Shows, International TV Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6936','TV Show','Hart of Dixie',to_date(' December 15, 2015', 'MONTH DD, YYYY'),2014,'TV-PG','4 Seasons','TV Comedies, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6942','TV Show','Haven',to_date(' September 8, 2015', 'MONTH DD, YYYY'),2015,'TV-14','5 Seasons','Classic & Cult TV, TV Horror, TV Mysteries');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6956','TV Show','Hell on Wheels',to_date(' May 28, 2016', 'MONTH DD, YYYY'),2016,'TV-14','5 Seasons','Crime TV Shows, TV Action & Adventure');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6970','TV Show','Highway Thru Hell',to_date(' December 3, 2019', 'MONTH DD, YYYY'),2016,'TV-PG','3 Seasons','Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s6971','TV Show','Highway to Heaven',to_date(' November 1, 2016', 'MONTH DD, YYYY'),1988,'TV-PG','5 Seasons','TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7030','TV Show','Huntik: Secrets and Seekers',to_date(' January 1, 2018', 'MONTH DD, YYYY'),2011,'TV-Y7','2 Seasons','Kids'' TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7149','TV Show','Julius Jr.',to_date(' November 3, 2015', 'MONTH DD, YYYY'),2014,'TV-Y','2 Seasons','Kids'' TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7218','TV Show','Knights of Sidonia',to_date(' December 1, 2019', 'MONTH DD, YYYY'),2015,'TV-MA','2 Seasons','Anime Series, International TV Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7288','TV Show','Lego Friends',to_date(' February 1, 2019', 'MONTH DD, YYYY'),2017,'TV-G','3 Seasons','Kids'' TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7308','TV Show','Limmy''s Show!',to_date(' October 1, 2019', 'MONTH DD, YYYY'),2012,'TV-MA','2 Seasons','British TV Shows, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7332','TV Show','LoliRock',to_date(' May 1, 2018', 'MONTH DD, YYYY'),2016,'TV-Y','2 Seasons','Kids'' TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7343','TV Show','Lost Girl',to_date(' April 17, 2016', 'MONTH DD, YYYY'),2015,'TV-14','5 Seasons','TV Dramas, TV Horror, TV Mysteries');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7369','TV Show','Mad Men',to_date(' March 22, 2015', 'MONTH DD, YYYY'),2014,'TV-14','7 Seasons','TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7410','TV Show','Mars',to_date(' November 1, 2019', 'MONTH DD, YYYY'),2018,'TV-PG','2 Seasons','Docuseries, Science & Nature TV, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7458','TV Show','Mini Wolf',to_date(' September 16, 2018', 'MONTH DD, YYYY'),2014,'TV-G','2 Seasons','Kids'' TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7522','TV Show','Mr. Young',to_date(' April 16, 2019', 'MONTH DD, YYYY'),2013,'TV-G','2 Seasons','Kids'' TV, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7530','TV Show','Mutant Busters',to_date(' June 1, 2017', 'MONTH DD, YYYY'),2017,'TV-PG','2 Seasons','Kids'' TV, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7575','TV Show','Nature''s Weirdest Events',to_date(' September 1, 2019', 'MONTH DD, YYYY'),2015,'TV-PG','3 Seasons','British TV Shows, Docuseries, Science & Nature TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7577','TV Show','Nazi Mega Weapons',to_date(' March 1, 2017', 'MONTH DD, YYYY'),2016,'TV-PG','3 Seasons','Docuseries');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7587','TV Show','Nightmare Tenants, Slum Landlords',to_date(' July 12, 2019', 'MONTH DD, YYYY'),2016,'TV-MA','2 Seasons','British TV Shows, International TV Shows, Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7629','TV Show','Nurse Jackie',to_date(' December 31, 2015', 'MONTH DD, YYYY'),2015,'TV-MA','7 Seasons','TV Comedies, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7647','TV Show','Oh No! It''s an Alien Invasion',to_date(' May 31, 2015', 'MONTH DD, YYYY'),2014,'TV-Y7-FV','2 Seasons','Kids'' TV, TV Action & Adventure, TV Sci-Fi & Fantasy');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7680','TV Show','Origins Collection',to_date(' July 20, 2018', 'MONTH DD, YYYY'),2018,'TV-PG','3 Seasons','Docuseries');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7706','TV Show','Paranormal Survivor',to_date(' August 4, 2017', 'MONTH DD, YYYY'),2016,'TV-14','2 Seasons','Docuseries');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7710','TV Show','Parks and Recreation',to_date(' January 13, 2016', 'MONTH DD, YYYY'),2015,'TV-14','7 Seasons','TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7722','TV Show','Pee-wee''s Playhouse',to_date(' December 18, 2014', 'MONTH DD, YYYY'),1990,'TV-PG','5 Seasons','Classic & Cult TV, Kids'' TV, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7730','TV Show','Person of Interest',to_date(' September 22, 2016', 'MONTH DD, YYYY'),2016,'TV-14','5 Seasons','Crime TV Shows, TV Action & Adventure, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7807','TV Show','Pyaar Tune Kya Kiya',to_date(' June 1, 2017', 'MONTH DD, YYYY'),2014,'TV-14','3 Seasons','International TV Shows, Romantic TV Shows, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7851','TV Show','Reggie Yates Outside Man',to_date(' December 15, 2017', 'MONTH DD, YYYY'),2017,'TV-MA','2 Seasons','British TV Shows, Docuseries, International TV Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7897','TV Show','Royal Pains',to_date(' May 18, 2017', 'MONTH DD, YYYY'),2016,'TV-PG','8 Seasons','TV Comedies, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7907','TV Show','Rurouni Kenshin',to_date(' January 1, 2020', 'MONTH DD, YYYY'),1998,'TV-14','3 Seasons','Anime Series, International TV Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7954','TV Show','Scandal',to_date(' May 19, 2018', 'MONTH DD, YYYY'),2018,'TV-14','7 Seasons','Crime TV Shows, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s7983','TV Show','Sensitive Skin',to_date(' December 1, 2019', 'MONTH DD, YYYY'),2016,'TV-MA','1 Season','TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8023','TV Show','Sin Senos sÃ­ Hay ParaÃ­so',to_date(' January 11, 2019', 'MONTH DD, YYYY'),2018,'TV-MA','3 Seasons','International TV Shows, Spanish-Language TV Shows, TV Dramas');
+ INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8065','TV Show','Spartacus',to_date(' February 1, 2015', 'MONTH DD, YYYY'),2013,'TV-MA','4 Seasons','TV Action & Adventure, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8071','TV Show','Splash and Bubbles',to_date(' August 13, 2018', 'MONTH DD, YYYY'),2018,'TV-Y','2 Seasons','Kids'' TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8148','TV Show','Taken',to_date(' January 12, 2019', 'MONTH DD, YYYY'),2018,'TV-14','2 Seasons','Crime TV Shows, TV Action & Adventure, TV Thrillers');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8175','TV Show','That ''70s Show',to_date(' November 1, 2017', 'MONTH DD, YYYY'),2005,'TV-14','8 Seasons','TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8190','TV Show','The Andy Griffith Show',to_date(' July 1, 2017', 'MONTH DD, YYYY'),1967,'TV-G','8 Seasons','Classic & Cult TV, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8194','TV Show','The Apartment',to_date(' December 14, 2018', 'MONTH DD, YYYY'),2014,'TV-PG','2 Seasons','International TV Shows, Reality TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8258','TV Show','The Cravings',to_date(' April 20, 2017', 'MONTH DD, YYYY'),2016,'TV-14','2 Seasons','International TV Shows, Korean TV Shows, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8272','TV Show','The Day My Butt Went Psycho!',to_date(' June 30, 2015', 'MONTH DD, YYYY'),2015,'TV-Y7','2 Seasons','Kids'' TV, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8312','TV Show','The Fosters',to_date(' October 5, 2017', 'MONTH DD, YYYY'),2017,'TV-14','5 Seasons','TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8316','TV Show','The Furchester Hotel',to_date(' February 1, 2017', 'MONTH DD, YYYY'),2015,'TV-Y','2 Seasons','British TV Shows, Kids'' TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8358','TV Show','The Inbetweeners',to_date(' January 1, 2018', 'MONTH DD, YYYY'),2010,'TV-MA','3 Seasons','British TV Shows, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8379','TV Show','The L Word',to_date(' March 20, 2018', 'MONTH DD, YYYY'),2009,'TV-MA','6 Seasons','Romantic TV Shows, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8423','TV Show','The Mind of a Chef',to_date(' November 1, 2017', 'MONTH DD, YYYY'),2016,'TV-PG','5 Seasons','Docuseries');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8424','TV Show','The Minimighty Kids',to_date(' April 15, 2018', 'MONTH DD, YYYY'),2012,'TV-G','2 Seasons','Kids'' TV, TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8425','TV Show','The Ministry of Time',to_date(' January 28, 2018', 'MONTH DD, YYYY'),2017,'TV-MA','3 Seasons','International TV Shows, Spanish-Language TV Shows, TV Action & Adventure');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8443','TV Show','The Office (U.S.)',to_date(' January 1, 2016', 'MONTH DD, YYYY'),2012,'TV-14','9 Seasons','TV Comedies');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8511','TV Show','The Sniffer',to_date(' June 1, 2018', 'MONTH DD, YYYY'),2017,'TV-MA','3 Seasons','Crime TV Shows, International TV Shows, TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8519','TV Show','The Story of God with Morgan Freeman',to_date(' February 1, 2019', 'MONTH DD, YYYY'),2017,'TV-14','2 Seasons','Docuseries');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8540','TV Show','The Tudors',to_date(' January 8, 2018', 'MONTH DD, YYYY'),2010,'TV-MA','4 Seasons','TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8558','TV Show','The West Wing',to_date(' December 25, 2015', 'MONTH DD, YYYY'),2005,'TV-14','7 Seasons','TV Dramas');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8685','TV Show','Vroomiz',to_date(' August 1, 2017', 'MONTH DD, YYYY'),2016,'TV-Y','3 Seasons','Kids'' TV, Korean TV Shows');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8713','TV Show','Weird Wonders of the World',to_date(' March 31, 2017', 'MONTH DD, YYYY'),2016,'TV-PG','2 Seasons','British TV Shows, Docuseries, Science & Nature TV');
+INSERT INTO NETFLIX (SHOW_ID, TYPE, TITLE, DATE_ADDED, RELEASE_YEAR, RATING, DURATION, LISTED_IN) VALUES ('s8756','TV Show','Women Behind Bars',to_date(' November 1, 2016', 'MONTH DD, YYYY'),2010,'TV-14','3 Seasons','Crime TV Shows, Docuseries');
+
+SELECT show_id, COUNT(*)
+FROM netflix
+GROUP BY show_id
+HAVING COUNT(*) > 1;
+DELETE FROM netflix
+WHERE ROWID NOT IN (
+  SELECT MIN(ROWID)
+  FROM netflix
+  GROUP BY show_id
+);
+---------------------------------------------------------------------------------------------------------------------------------------------------
+SELECT type, COUNT(*) 
+FROM netflix
+GROUP by type;
+--------------------------------------------------------------------------------------------------------------------------------------------------- 
+SELECT *
+FROM netflix
+ORDER BY 1 ASC; -- Sort by the first column in ascending order
+---------------------------------------------------------------------------------------------------------------------------------------------------
+SELECT MIN(date_added) AS earliest, MAX(date_added) AS latest
+FROM netflix;
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
